@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://fitotechnology.com/wp-content/uploads/2025/07/HoD_Logo-1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODL or DUMP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc; /* light gray fallback */
+        background-image: radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0);
+        background-size: 2rem 2rem;
+      }
+      @keyframes slide-out-right {
+        to {
+          opacity: 0;
+          transform: translateX(50px) scale(0.95);
+        }
+      }
+      @keyframes slide-out-left {
+        to {
+          opacity: 0;
+          transform: translateX(-50px) scale(0.95);
+        }
+      }
+      @keyframes slide-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(30px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out forwards;
+      }
+      .animate-slide-out-right {
+        animation: slide-out-right 0.3s forwards ease-in;
+      }
+      .animate-slide-out-left {
+        animation: slide-out-left 0.3s forwards ease-in;
+      }
+      .animate-slide-in-up {
+        animation: slide-in-up 0.4s forwards ease-out;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.3",
+    "@vercel/node": "https://esm.sh/@vercel/node@^5.3.7",
+    "@google/genai": "https://esm.sh/@google/genai@^1.12.0",
+    "@vercel/kv": "https://esm.sh/@vercel/kv@^3.0.0",
+    "vite": "https://esm.sh/vite@^7.0.6",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
